@@ -7,10 +7,15 @@ html {
   }
 
 /* Body properties */
-#grad {
+#grad1 {
     background-image: linear-gradient(to bottom right, #8c00ff, #00ff0d);
     
   }
+
+#grad2 {
+  background-image: linear-gradient(to bottom right,rgb(255,0,255), rgb(0,255,255));
+  
+}
 
 body {
     /* margin: 0; */
@@ -57,7 +62,16 @@ h1 {
     -moz-transition: all 0.12s ease-out;
     -ms-transition: all 0.12s ease-out;
     -o-transition: all 0.12s ease-out;
+    text-decoration:none;
 }
+
+a.h1link {
+  text-decoration:none;
+}
+
+a.h1link:visited { 
+  color:#fad20a; 
+} 
 
 h3 {
     font-family: 'Arial', Geneva, sans-serif;
