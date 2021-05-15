@@ -102,7 +102,7 @@ function gen_graph(course, prereqs) {
     return graph;
 }
 
-fetch("../data/master_prereqs.json")
+fetch("../major_map_v1/data/master_prereqs.json")
     .then(function (resp) {
         return resp.json();
     })

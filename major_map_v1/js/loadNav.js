@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-    $("#navbar").load("../html/nav.html");
+    $("#navbar").load("../major_map_v1/html/nav.html");
 });
 
 // When the user scrolls the page, execute myFunction
