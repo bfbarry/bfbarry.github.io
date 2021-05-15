@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173614963-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-173614963-1');
+    </script>
+
+    <meta charset="utf-8">
+    <title>Major Map Initiative</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="img/map.ico">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" ></script>
+  </head>
+
+    <body id = "grad">
+      <div class = "container" id = "front_page">
+        <div class = "row" >
+          <div class = "col" >
+            <h1 id = "logo"> 
+              <img src = "./img/triton_logo.png" height="55"> </img>
+                Major Map Initiative 
+            </h1>
+
+            <div id="navbar"></div>
+        
+            <p>This website is unfinished.  We are looking for members to help us with this endeavor!</p>
+            
+            <h2>A Brief Mission Statement</h2>
+            <h3>Why are we doing this?</h3>
+            <p>   &emsp; Deciding on a major and selecting what classes to take is a complex task, especially as an incoming college student.  
+              Students in a major sometimes get tunnel vision and take college one quarter at a time, not realizing why they have 
+              to take specific classes and how it ties into the big picture.  Prerequisites in certain majors can be very dependent 
+              on one another, so being able to plan ahead by understanding how courses are related – through a visual “map” – is a 
+              valuable asset. <br>
+              &emsp; While existing campus resources are helpful, we wanted to offer a more intuitive set of tools to encourage a more 
+              proactive and comprehensive planning of one’s college career.  As a student org we also believe students should be 
+              more actively involved in understanding the structure of their majors.
+            </p>
+
+            <h3>What does our app want to accomplish?</h3>
+            
+            <p>   &emsp; We want this website to be an accessible tool students can use not just to plan classes for the next quarter, 
+            but for their whole college career.  With the contribution of students and org members, we want to shed light 
+            on the structure of majors, explaining why certain prerequisites are necessary. This can also be a hub to make 
+            one’s first look at majors and individual classes more in depth than just scanning the course catalog – by adding 
+            studying tips and resources to each class, so you know what to expect.<br>  
+            &emsp; The main set of tools we are developing are applets to display a variety of road maps: one for majors, one for GEs, etc.  
+            Thus far we have created the core framework, which is an applet displaying all dependent prerequisites for a given course. <br>
+            &emsp; In the long term we’d like this to be an official tool used by the university – and possibly other universities.  By 
+            collaborating with faculty, we hope to bridge the gap between the student body and administration. 
+            </p>
+            
+            <h2>How do I join?</h2>
+            <p>&emsp; We are looking for new principal members as well as members. We believe this is a great opportunity to 
+              develop your leadership and/or coding skills, by working on a collaborative and creative project that can 
+              help other students.</p>
+
+            <form action = "https://docs.google.com/forms/d/e/1FAIpQLSeQTf3Eqgj6VQsbpYIQlI4xMa4JvRAabJOGmQy9JYfpu7gI7Q/viewform?usp=sf_link" target="_blank">
+              <button id = "display" type="submit" class="btn btn-primary">Click here to apply!</button>
+            </form>
+            
+            <h2>Current state of affairs (as of July 2020)</h2>
+            <p>
+              &emsp; So far we have created an applet on this website that generates a prerequisite map for a given course in the form of a <a href ='https://en.wikipedia.org/wiki/Directed_acyclic_graph' target="_blank">directed acyclic graph</a>.</p>
+            </p>
+
+            <h2>Founding Members</h2>
+            
+            <div style="padding-left: 200px;">
+
+              <div class="card text-white bg-dark mb-3" style="max-width: 14rem; float: left; margin-right: 20px;">
+                <img class="card-img-top" src="./img/brian.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Brian Barry</h5>
+                  <p class="card-text" style = 'font-size: 13px;'><i>Cognitive Science '20</i></p>
+                </div>
+              </div>
+
+              <div class="card text-white bg-dark mb-3" style="max-width: 14rem; float: left; margin-right: 20px;">
+                <img class="card-img-top" src="./img/mike.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Michael Marsella</h5>
+                  <p class="card-text" style = 'font-size: 13px;'><i>Math & Computer Science '20</i></p>
+                </div>
+              </div>
+
+              <div class="card text-white bg-dark mb-3" style="max-width: 14rem; float: left; margin-right: 20px;">
+                <img class="card-img-top" src="./img/clark.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Clark Phan</h5>
+                  <p class="card-text" style = 'font-size: 13px;'> <i>Math & Computer Science '20</i></p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </body>
+    <script src="./js/loadNav.js"></script>
+</html>
