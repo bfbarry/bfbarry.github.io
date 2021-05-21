@@ -155,6 +155,8 @@ p.blu {
 .icon-archive{
   float:left;
 }
+
+/* DIV STUFF */
 div.text{
   float:left;
   margin-left: 5px;
@@ -162,4 +164,24 @@ div.text{
 
 div.txtbox {
   background-color:#91aec5;
+}
+
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  /* padding-left: ; */
+  justify-content: center;
+}
+
+.flex-container > div {
+  margin: 10px;
+  padding: 5px;
+}
+
+.zoom {
+  transition: transform .2s; /* Animation */
+}
+
+.zoom:hover {
+  transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
