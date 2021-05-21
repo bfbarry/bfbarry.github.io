@@ -178,10 +178,27 @@ div.txtbox {
   padding: 5px;
 }
 
+.flex-container > a {
+  margin: 10px;
+  padding: 5px;
+}
+
 .zoom {
   transition: transform .2s; /* Animation */
 }
 
 .zoom:hover {
   transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
+/* AUTOMADRAWN LOGO */
+.ad_logo {
+  width: 500px;
+  height: 80px;
+  background: url("/automadrawn/img/ising_logo1.png") no-repeat;
+  display: inline-block;
+}
+.ad_logo:hover {
+  background: url("/automadrawn/img/ising_logo2.png") no-repeat;
 }
