@@ -72,19 +72,19 @@ a.h1link {
 a.h1link:visited { 
   color:#fad20a; 
 } 
-
-h3 {
-    font-family: 'Arial', Geneva, sans-serif;
-    color: rgb(49, 136, 148);
-}
-
 h2 {
     font-family: 'Arial', Geneva, sans-serif;
     font-size: 30px;
-    color:  rgb(49, 136, 148);
+    color:  rgb(49, 136, 148) !important; 
     text-align: left;
 
 } 
+
+h3 {
+    font-family: 'Arial', Geneva, sans-serif;
+    color: rgb(49, 136, 148) !important; 
+}
+
 p {
   margin-left: 20px;
   margin-top: 20px;
