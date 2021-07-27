@@ -163,7 +163,13 @@ div.text{
 }
 
 div.txtbox {
-  background-color:#91aec5;
+  background-color:#203a3b;
+  color: #6aa384;
+  box-shadow: 10px 10px;
+  border-radius: 5px;
+  padding-top: 20px;
+  margin-left: 30px;
+  font-family: Consolas, sans-serif;
 }
 
 .flex-container {
