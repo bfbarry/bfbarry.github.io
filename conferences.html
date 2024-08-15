@@ -32,73 +32,62 @@
 
 <body style="background-color:#000c18;">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="./">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Resumes
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="./pdf/Brian_Barry_Resume.pdf">Data science</a>
-          </div>
-        </li>
-  
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Projects
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="./data_vis.html">Data vis gallery</a>
-            <a class="dropdown-item" href="./major_map_v1/index.html">Major Map Initiative 1.0</a>
-            <a class="dropdown-item" href="./automadrawn/">Automadrawn</a>
-            <a class="dropdown-item" href="https://github.com/bfbarry/EEGLAB-specparam/">EEGLAB specparam</a>
-          </div>
-        </li>
-        
-        <li class="nav-item">
-          <a class="nav-link" href="./conferences.html">
-            Research
-          </a>
-        </li>
-        <!-- thanks to https://stackoverflow.com/questions/30785831/best-way-to-implement-anchor-tag-with-an-svg-inside-and-text -->
-        <li class="nav-item">
-          <a class="nav-link" href="https://www.linkedin.com/in/bfbarry/">
-            <span class="icon-archive">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-            </span>
-            <div class="text">LinkedIn</div>
-          </a>
-        </li>
-  
-        <li class="nav-item">
-          <a class="nav-link" href="https://github.com/bfbarry">
-            <span class="icon-archive">
-              <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-            </span>
-            <div class="text">GitHub</div>
-        </a> 
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <h1 class = "cool" id="title"> Conferences</h1>
-  <h2 font-size="14px">Relating the power law decay of power and eigenvalue spectra of neural population data</h2>
-    <p class="blu"><b>Brian Barry</b>, Bradley Voytek, Richard Gao (2020)</p>
-    <p class="blu">Voytek Lab @ UC San Diego</p>
-    <h3>2020 Neuromatch Conference Abstract (presentation recording <a href = "https://www.youtube.com/watch?v=fkD749cwT7Y"> here</a>)</h3>
-    <p class="blu" style="margin-left:30px;"> 
-      &nbsp;&nbsp;  Neural data of all kinds exhibit 1/f-like statistics, which is often interpreted as evidence that the brain operates at the edge of criticality. Indeed, systems at criticality display scale-free temporal and spatial correlations, typically characterized by power law distributions of avalanche size and duration with related exponents. Previous works have demonstrated this in neural activity, and it is thought that long-range correlations across space and time maximize information processing. Alternatively, temporal and spatial correlation in neural population data can be characterized by the power spectrum and eigendecomposition (via PCA). It is well known that neural power spectra often follow a 1/f power law, where power decays as a function of frequency. More recently, it’s been shown that neural population activity resides on a low-dimensional manifold, and that the eigenvalue spectrum also follows a power law. <br>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="./">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" type="application/pdf" href="./pdf/Brian_Barry_Resume.pdf">Resume</a>
+          </li>
 
-      &nbsp;&nbsp; Here we investigate the relationship between the eigenvalue and power spectra – decompositions across space and time, respectively – in population spiking recordings and simulated data. We fit power law models to population power spectra and eigenspectra, and compute the correlation between their power law exponents as a function of population subsampling size, to find a subset size at which potential correlations between the exponents may arise. We find that space and time decompositions were correlated for select brain regions (e.g. V1, V2 and hippocampal formation) in some mice and no definitive subset size initiated inter-spectral correlations. In comparison, we simulate independent colored noise “recordings” with varying exponents, and find 1) their eigenvalue spectra spuriously also follow power law distributions, where 2) the decay exponents in time and space are closely related, despite being independently generated processes. This seems to arise naturally as a consequence of correlating any power law distributed processes. This suggests that low-dimensional (typically power law obeying) neural manifolds can arise purely as a result of the temporal statistics of potentially independent neuronal activity, thus calling for more robust measures of neural manifolds and criticality in the brain.
-    </p>
-    <h3><a href = "https://braincriticality.org/2020/10/05/virtual-poster-relating-the-power-law-decay-of-power-and-eigenvalue-spectra-of-neural-population-data-2/">Link to 2020 Brain Criticality Meeting Poster</a></h3> 
-    <h3><a href = "https://github.com/voytekresearch/galaxybrain">Link to Github repository</a></h3> 
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Projects
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="https://github.com/bfbarry/visual-shell">Visual Shell</a>
+              <a class="dropdown-item" href="https://github.com/bfbarry/cli_amp">CLI Amp</a>
+              <a class="dropdown-item" href="https://github.com/CollabSource/web-app">CollabSource</a>
+              <a class="dropdown-item" href="./major_map_v1/index.html">Major Map Initiative 1.0</a>
+              <a class="dropdown-item" href="./automadrawn/">Automadrawn</a>
+              <a class="dropdown-item" href="./data_vis.html">Data vis</a>
+            </div>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="./conferences.html">
+              Research
+            </a>
+          </li>
+          <!-- thanks to https://stackoverflow.com/questions/30785831/best-way-to-implement-anchor-tag-with-an-svg-inside-and-text -->
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.linkedin.com/in/bfbarry/">
+              <span class="icon-archive">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              </span>
+              <div class="text">LinkedIn</div>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/bfbarry">
+              <span class="icon-archive">
+                <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </span>
+              <div class="text">GitHub</div>
+          </a> 
+          </li>
+        </ul>
+      </div>
+    </nav>
+  <h1 class = "cool" id="title"> Conferences</h1>
+  <a href='https://github.com/voytekresearch/galaxybrain'>
+    <img style='width:75%' class='gallery' alt='Correlated spatial and temporal spectra of neural activity' src='./img/data_vis/sfn2022.jpg'>
+  </a>
 </body>
 </html>
