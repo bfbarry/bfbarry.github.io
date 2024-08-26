@@ -2,6 +2,8 @@
 
 <html>
   <head>
+    <script type="module" crossorigin src="/assets/index-BPUwRHM0.js"></script>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-D9BYTMH8V7"></script>
     <script>
@@ -18,7 +20,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js" ></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js" ></script> -->
   </head>
   <body class='topo'>
     <div class='title_container'>
@@ -81,18 +83,24 @@
       </div>
     </nav>
 
-    <div >
-      <img style="width: 500px;"src="./img/carmel.jpeg" align="left" >
+    <div class="main-container">
+
+      <div >
+        <img class="prevent-select" style="width: 500px;"src="./img/carmel.jpeg" align="left" >
+      </div>
+      <div class="text txtbox prevent-select" style="margin-top: 30px; width: 300px">
+        <p>I'm Brian.</p>
+        <p>I'm interested in complex systems, software, and data science.</p> 
+        <p>I also enjoy <a href='/automadrawn'>designing shirts using computation</a>.</p>
+      </div>
+      <div id="squorb-parent">
+        <div id="squorb"></div>
+        <div class="prevent-select" style="color: white; z-index: 1; width: 10px">click on it :)</div>
+      </div>
+      <!-- <script src="./js/loadNav.js"></script> -->
     </div>
-    <div class="text txtbox" style="margin-top: 30px; width: 300px;">
-      <p>I'm Brian.</p>
-      <p>I'm interested in complex systems, software, and data science.</p> 
-      <p>I also enjoy <a href='/automadrawn'>designing shirts using computation</a>.</p>
-    </div>
-    
-    <div class="container" style="bottom:0; position:fixed; text-align: center;">
+    <div class="prevent-select" style="bottom:0; position:fixed; display: flex; flex-direction: row; justify-content: center; width: 100%;">
       <p style='color: white'>© Brian Barry 2024</p>
     </div>
-    <!-- <script src="./js/loadNav.js"></script> -->
   </body>
 </html>
