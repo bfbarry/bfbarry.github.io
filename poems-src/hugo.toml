@@ -1,0 +1,16 @@
+baseURL = "https://www.bfbarry.com/poems/"
+locale = "en-us"
+title = "Poems | Brian Barry"
+
+# Build straight into the published /poems directory that GitHub Pages serves.
+publishDir = "../poems"
+
+disableKinds = ["taxonomy", "term", "RSS", "sitemap"]
+
+[markup.goldmark.renderer]
+  # A single newline inside a poem stanza becomes <br> instead of being
+  # collapsed into a space, so poems can be written as plain lines of text.
+  hardWraps = true
+
+[params]
+  author = "Brian Barry"

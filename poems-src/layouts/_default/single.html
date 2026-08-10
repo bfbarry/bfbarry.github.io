@@ -1,0 +1,10 @@
+{{ define "title" }}{{ if .Title }}{{ .Title }}{{ else }}Poem{{ end }} | Brian Barry{{ end }}
+
+{{ define "main" }}
+  <p class="poem-year">{{ .Params.year }}</p>
+  {{ if .Title }}
+    <h2>{{ .Title }}{{ with .Params.subtitle }} - {{ . }}{{ end }}</h2>
+  {{ end }}
+  {{ .Content }}
+  <p class="back-link"><a href="{{ .Site.Home.RelPermalink }}">&larr; All poems</a></p>
+{{ end }}

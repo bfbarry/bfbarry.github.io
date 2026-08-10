@@ -1,0 +1,83 @@
+/* Old Book / Old Paper style, ported from the original poems/index.html */
+
+body {
+  /* Beige/Old Paper Color */
+  background-color: #F5F5DC;
+  /* American Typewriter font fallback */
+  font-family: "American Typewriter", Courier, serif;
+  color: #332f2a;
+  line-height: 1.6;
+  margin: 0;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  max-width: 800px;
+  width: 100%;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  border-bottom: 1px solid #c2b8a3;
+  display: block;
+  width: 100%;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  border-bottom: 1px solid #c2b8a3;
+  display: block;
+  width: 100%;
+}
+
+h2 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h2 a:hover {
+  text-decoration: underline;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 1.1rem;
+  line-height: 1.9;
+}
+
+.site-back {
+  margin: 0 0 1rem 0;
+  font-size: 0.85rem;
+}
+
+.site-back a {
+  color: #7a7160;
+  text-decoration: none;
+}
+
+.site-back a:hover {
+  text-decoration: underline;
+}
+
+.poem-year {
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #7a7160;
+  margin-top: 0;
+}
+
+.back-link {
+  margin-top: 3rem;
+  font-size: 0.95rem;
+}
+
+.back-link a {
+  color: #4a4032;
+}
