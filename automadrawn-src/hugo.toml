@@ -1,0 +1,13 @@
+baseURL = "https://www.bfbarry.com/automadrawn/"
+locale = "en-us"
+title = "Automadrawn"
+
+# Build straight into the published /automadrawn directory that GitHub Pages
+# serves. The merch/ subdirectory there is hand-authored (not part of this
+# Hugo site) and is left alone since Hugo doesn't clean unmanaged files.
+publishDir = "../automadrawn"
+
+disableKinds = ["taxonomy", "term", "RSS", "sitemap"]
+
+[params]
+  author = "Brian Barry"

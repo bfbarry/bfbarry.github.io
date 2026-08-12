@@ -1,28 +1,6 @@
-<!DOCTYPE html>
+{{ define "title" }}Automadrawn{{ end }}
 
-<html>
-  <head>
-	<meta name="generator" content="Hugo 0.164.0">
-    <title>Automadrawn</title>
-    
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D9BYTMH8V7"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-D9BYTMH8V7');
-    </script>
-    <link rel="stylesheet" href="../styles.css">
-    
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
-    
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" ></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" ></script>
-  </head>
-  <body id="grad1">
-    
+{{ define "main" }}
     <div class="ad_logo"></div>
 
     <div class='flex-container'>
@@ -30,7 +8,7 @@
         <span class="icon-archive" >
           <svg xmlns="http://www.w3.org/2000/svg" style="fill:white" width="24" height="24" viewBox="0 0 24 24"><path d="M10 19.5c0 .829-.672 1.5-1.5 1.5s-1.5-.671-1.5-1.5c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5zm3.5-1.5c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm1.336-5l1.977-7h-16.813l2.938 7h11.898zm4.969-10l-3.432 12h-12.597l.839 2h13.239l3.474-12h1.929l.743-2h-4.195z"/></svg>
         </span>
-         
+         <!-- &nbsp; shop clothing -->
       </a>
       <a class="btn-lg btn-primary" href="https://www.instagram.com/automadrawn/">
         <span class="icon-archive" >
@@ -58,6 +36,4 @@
     <div class="container" style="bottom:0; position:fixed; text-align: center;">
       <p style='color: white'>© Automadrawn 2021</p>
     </div>
-
-  </body>
-</html>
+{{ end }}
