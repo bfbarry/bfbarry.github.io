@@ -212,6 +212,11 @@ div.txtbox {
   padding: 5px;
 }
 
+.flex-container > figure {
+  margin: 10px;
+  padding: 5px;
+}
+
 .zoom {
   transition: transform .2s; /* Animation */
 }
