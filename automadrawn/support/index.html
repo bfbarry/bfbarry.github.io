@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chaosic Support</title>
+  <meta name="description" content="Get help with Chaosic for macOS.">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D9BYTMH8V7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-D9BYTMH8V7');
+  </script>
+
+  <link rel="stylesheet" href="../../styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <style>
+    :root {
+      --fg: #f5f5f7; --muted: #cfcfe0; --border: #5a5a72;
+      --field: rgba(255,255,255,0.08); --accent: #0a84ff; --ok: #3fb950; --err: #ff6b6b;
+    }
+    * { box-sizing: border-box; }
+    .support-card {
+      max-width: 640px; margin: 10px auto 64px; padding: 32px 28px 40px;
+      background: rgba(20, 10, 30, 0.72); color: var(--fg);
+      border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,.35);
+    }
+    .support-card h1 { font-size: 2rem; margin: 0 0 8px; color: var(--fg) !important; text-align: left; }
+    .support-card .lead { color: var(--muted); margin: 0 0 28px; }
+    .support-card label { display: block; font-weight: 600; font-size: .9rem; margin-bottom: 6px; color: var(--fg); }
+    .support-card .opt { font-weight: 400; color: var(--muted); }
+    .support-card input, .support-card select, .support-card textarea {
+      width: 100%; padding: 10px 12px; font: inherit; color: var(--fg);
+      background: var(--field); border: 1px solid var(--border); border-radius: 8px;
+    }
+    .support-card input:focus, .support-card select:focus, .support-card textarea:focus {
+      outline: 2px solid var(--accent); outline-offset: 1px;
+    }
+    .support-card select option { color: #1d1d1f; }
+    .support-card textarea { min-height: 160px; resize: vertical; }
+    .support-card .field { margin-bottom: 18px; }
+    .support-card .row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    @media (max-width: 520px) { .support-card .row { grid-template-columns: 1fr; } }
+    .support-card .hint { color: var(--muted); font-size: .85rem; margin-top: 4px; }
+    .support-card button {
+      appearance: none; border: 0; border-radius: 8px; padding: 12px 22px;
+      background: var(--accent); color: #fff; font: inherit; font-weight: 600; cursor: pointer;
+    }
+    .support-card button:disabled { opacity: .6; cursor: default; }
+    .support-card #status { margin-top: 16px; min-height: 1.5em; }
+    .support-card #status.ok { color: var(--ok); }
+    .support-card #status.err { color: var(--err); }
+    /* Honeypot: hidden from people, visible to naive bots */
+    .hp { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
+  </style>
+</head>
+<body id="grad1">
+
+  <a href="../"><div class="ad_logo"></div></a>
+
+  <main class="support-card">
+    <h1>Chaosic Support</h1>
+    <p class="lead">Questions, bug reports or feature ideas? Send a message and I'll get back to you by email, usually within a couple of days.</p>
+
+    <form id="support-form" novalidate>
+      <div class="row">
+        <div class="field">
+          <label for="name">Name <span class="opt">(optional)</span></label>
+          <input id="name" name="name" autocomplete="name" maxlength="100">
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" maxlength="254" required>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="category">Topic</label>
+        <select id="category" name="category">
+          <option>Bug report</option>
+          <option>Feature request</option>
+          <option>Purchase / billing</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <div class="row">
+        <div class="field">
+          <label for="appVersion">App version <span class="opt">(optional)</span></label>
+          <input id="appVersion" name="appVersion" maxlength="32" placeholder="e.g. 1.2 (34)">
+          <div class="hint">Chaosic menu → About Chaosic</div>
+        </div>
+        <div class="field">
+          <label for="osVersion">macOS version <span class="opt">(optional)</span></label>
+          <input id="osVersion" name="osVersion" maxlength="32" placeholder="e.g. 15.1">
+          <div class="hint"> menu → About This Mac</div>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="subject">Subject <span class="opt">(optional)</span></label>
+        <input id="subject" name="subject" maxlength="150">
+      </div>
+
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" maxlength="5000" required
+          placeholder="What happened, what you expected, and steps to reproduce if it's a bug."></textarea>
+      </div>
+
+      <div class="hp" aria-hidden="true">
+        <label for="website">Leave this empty</label>
+        <input id="website" name="website" tabindex="-1" autocomplete="off">
+      </div>
+
+      <button type="submit" id="submit">Send message</button>
+      <div id="status" role="status" aria-live="polite"></div>
+    </form>
+  </main>
+
+  <script>
+    // Paste your Apps Script web app URL (ends in /exec).
+    const ENDPOINT = 'https://script.google.com/macros/s/AKfycbyM9kKTqLolzDA4GkUvY9GfMadx-lJOj4uJ_tGahpsfT8E5snoEhjdw7yQulLiqDvhb/exec';
+
+    const form = document.getElementById('support-form');
+    const statusEl = document.getElementById('status');
+    const submitBtn = document.getElementById('submit');
+    const loadedAt = Date.now();
+
+    // Prefill from the query string, so an in-app "Contact Support" link can pass
+    // e.g. support.html?v=1.2%20(34)&os=15.1&topic=Bug%20report
+    const qs = new URLSearchParams(location.search);
+    if (qs.get('v'))  form.appVersion.value = qs.get('v').slice(0, 32);
+    if (qs.get('os')) form.osVersion.value  = qs.get('os').slice(0, 32);
+    if (qs.get('topic')) {
+      const opt = [...form.category.options].find(o => o.value === qs.get('topic'));
+      if (opt) form.category.value = opt.value;
+    }
+
+    function setStatus(msg, kind) {
+      statusEl.textContent = msg;
+      statusEl.className = kind || '';
+    }
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const email = form.email.value.trim();
+      const message = form.message.value.trim();
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) {
+        setStatus('Please enter a valid email address so I can reply.', 'err');
+        form.email.focus();
+        return;
+      }
+      if (message.length < 10) {
+        setStatus('Please add a bit more detail to your message.', 'err');
+        form.message.focus();
+        return;
+      }
+
+      const body = new URLSearchParams(new FormData(form));
+      body.set('elapsedMs', String(Date.now() - loadedAt));
+
+      submitBtn.disabled = true;
+      setStatus('Sending…');
+
+      try {
+        // URLSearchParams body = application/x-www-form-urlencoded, a "simple" CORS
+        // request, so no preflight (Apps Script can't answer OPTIONS).
+        const res = await fetch(ENDPOINT, { method: 'POST', body });
+        const data = await res.json();
+        if (data.ok) {
+          form.reset();
+          setStatus("Thanks! Your message was sent. I'll reply to " + email + '.', 'ok');
+        } else {
+          setStatus(data.error || 'Something went wrong. Please try again.', 'err');
+        }
+      } catch (err) {
+        setStatus('Could not reach the server. Check your connection and try again.', 'err');
+      } finally {
+        submitBtn.disabled = false;
+      }
+    });
+  </script>
+</body>
+</html>
